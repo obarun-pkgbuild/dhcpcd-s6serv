@@ -1,0 +1,8 @@
+#!/bin/bash
+
+card=$(ip link show | grep enp | cut -b4-9)
+
+[ -r /etc/dhcpcd.conf ] && . /etc/dhcpcd.conf
+
+exec 2>&1
+exec /usr/bin/dhcpcd -B $card $OPTS 
