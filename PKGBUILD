@@ -2,7 +2,7 @@
 
 pkgname=dhcpcd-s6serv
 pkgver=0.1
-pkgrel=4
+pkgrel=5
 pkgdesc="dhcpcd service for s6"
 arch=(x86_64)
 license=('beerware')
@@ -27,7 +27,7 @@ package() {
 	
 	# log
 	install -Dm 0755 "$srcdir/dhcpcd.log.run.s6" "$pkgdir/etc/s6-serv/available/classic/dhcpcd/log/run"
-	install -Dm 0644 "$srcdir/dhcpcd.logd" "$pkgdir/etc/s6-serv/log.d/serv/dhcpcd"
+	install -Dm 0644 "$srcdir/dhcpcd.logd" "$pkgdir/etc/s6-serv/log.d/dhcpcd"
 	
 	install -Dm 0755 "$srcdir/LICENSE" "$pkgdir/usr/share/licenses/dhcpcd-s6serv/LICENSE"
 }
