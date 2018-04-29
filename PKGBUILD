@@ -1,8 +1,8 @@
 # Maintainer: Eric Vidal <eric@obarun.org>
 
 pkgname=dhcpcd-s6serv
-pkgver=0.1
-pkgrel=5
+pkgver=0.2
+pkgrel=1
 pkgdesc="dhcpcd service for s6"
 arch=(x86_64)
 license=('beerware')
@@ -14,7 +14,7 @@ source=('dhcpcd.daemon.finish.s6'
 		'dhcpcd.logd'
 		'LICENSE')
 md5sums=('85a07b0c36eb556d5ca634daaf7540c2'
-         '97eb90878e192d23a786e92eab440705'
+         '586109a47fba55ec058e1ec5ca6f5831'
          '65fae0a904e3459401f35f61317d57a8'
          '7286587f41043f53e437b27ca4dbb55e'
          '191a37ae657aa17e37e75d0242865dba')
